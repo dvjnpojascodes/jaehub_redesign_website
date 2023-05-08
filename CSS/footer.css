@@ -1,0 +1,27 @@
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: hwb(0 12% 88%);
+  color: #fff;
+}
+footer img {
+  width: 12em;
+  margin-left: -2em;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  padding: 1em;
+}
+footer a:hover {
+  color: #1D9FCD;
+}
+footer hr {
+  border-top: 2px solid #EFF5F5 !important;
+  width: 100% !important;
+}/*# sourceMappingURL=footer.css.map */
