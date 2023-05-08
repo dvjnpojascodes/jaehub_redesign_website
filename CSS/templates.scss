@@ -1,0 +1,98 @@
+$colors: (
+  primary: #1D9FCD,
+  accent: #EFF5F5,
+  text: #1E1E1E,
+);
+
+
+@function color($colorname){
+    @return map-get($colors, $colorname)
+  }
+
+$title-font: 'Lexend', sans-serif;;
+$content-font: 'Roboto', sans-serif;
+$btn-padding: 1em 4.5em;
+$btn-border: 5px;
+
+*, *::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+body {
+    font-family: $content-font; 
+    overflow-x: hidden;
+    font-size: 15px !important;
+}
+
+.title {
+    text-align: center;
+    margin-top: 4em;
+
+    .main-title {
+        font-family: $title-font; 
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: color(primary);
+        font-size: 3.2em;
+    }
+
+    .description {
+        padding: 1em 20em;
+    }
+}
+
+
+
+
+
+// cards
+
+.templates-section {
+    padding: 3em 2em 1em !important;
+    display: flex;
+    flex-wrap: wrap;
+
+    .row-2{margin-bottom: 3em;}
+
+
+    .card {
+        margin: 0 2em 3em;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em;
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: #fff;
+      
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          img{
+            width: 230px;
+            margin: 0 2em 0;
+          }
+      }
+
+      .card-link {
+        font-size: 16px;
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .card-link:last-child {
+        margin-right: 0;
+      }
+
+  }

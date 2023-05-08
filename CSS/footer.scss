@@ -1,0 +1,43 @@
+$colors: (
+  primary: #1D9FCD,
+  accent: #EFF5F5,
+  text: #1E1E1E,
+);
+
+
+@function color($colorname){
+    @return map-get($colors, $colorname)
+  }
+  
+*, *::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+footer {
+    background-color: hwb(0 12% 88%);
+    color: #fff;
+
+    img{
+        width: 12em;
+        margin-left: -2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2em;
+        padding: 1em;
+
+        &:hover{
+            color: color(primary);
+        }
+    }
+
+    hr {
+        border-top: 2px solid color(accent) !important; 
+        width: 100% !important; 
+      }
+}
