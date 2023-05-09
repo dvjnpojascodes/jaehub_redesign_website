@@ -305,10 +305,13 @@ body::-webkit-scrollbar-thumb {
   //                              MEDIA QUERIES 
   // =========================================================================
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1020px) {
     .contact-info {
       flex-direction: row;
       text-align: center;
+      font-size: 12px !important;
+      padding: 0 15px;
+      line-height: 20px;
     }
     
     .left-column, .right-column {
@@ -317,17 +320,21 @@ body::-webkit-scrollbar-thumb {
       flex-direction: row;
       flex-wrap: wrap;
       text-align: center;
+      justify-content: center;
+      align-items: center;
     }
     
     .right-column {
       justify-content: center;
-      margin-top: 10px;
+      align-items: center;
+      margin-top: 8px;
+      padding: 0 3em 2em;
     }
   }
 
 
     
-  @media screen and (max-width:800px){
+  @media screen and (max-width:1020px){
     
     nav{
       padding: 1em 1.5em !important;

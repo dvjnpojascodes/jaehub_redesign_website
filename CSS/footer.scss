@@ -19,6 +19,7 @@ $colors: (
 footer {
     background-color: hwb(0 12% 88%);
     color: #fff;
+    @media screen and (max-width:500px){font-size: 0.8em;}
 
     img{
         width: 12em;
@@ -34,6 +35,8 @@ footer {
         &:hover{
             color: color(primary);
         }
+
+        @media screen and (max-width:500px){padding: 0.5em;}
     }
 
     hr {

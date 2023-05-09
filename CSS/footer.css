@@ -8,6 +8,11 @@ footer {
   background-color: hwb(0 12% 88%);
   color: #fff;
 }
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 0.8em;
+  }
+}
 footer img {
   width: 12em;
   margin-left: -2em;
@@ -20,6 +25,11 @@ footer a {
 }
 footer a:hover {
   color: #1D9FCD;
+}
+@media screen and (max-width: 500px) {
+  footer a {
+    padding: 0.5em;
+  }
 }
 footer hr {
   border-top: 2px solid #EFF5F5 !important;
