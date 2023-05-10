@@ -1,0 +1,243 @@
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  font-size: 15px !important;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em !important;
+  }
+}
+
+.header {
+  display: flex;
+  background-color: #EFF5F5;
+  margin: 1em 2em;
+  padding: 2em 2em 0;
+  height: 38em;
+  border-radius: 20px;
+}
+.header .left {
+  width: 70%;
+}
+.header .left h2 {
+  font-size: 3em;
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding-top: 1em;
+  width: 90%;
+  color: #1E1E1E;
+}
+.header .left #sub-description {
+  width: 80%;
+  letter-spacing: 1px;
+  line-height: 2em;
+  padding-top: 2em;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+.header .right {
+  width: 30%;
+}
+.header .right img {
+  width: 50em;
+  position: relative;
+  top: -8em;
+  right: 17em;
+  z-index: 0;
+}
+.header .buttons {
+  margin-top: 5em;
+}
+.header .buttons a {
+  text-decoration: none;
+}
+.header .buttons a:nth-child(1) {
+  color: #fff;
+  background-color: #1D9FCD;
+  margin-top: 3em;
+  text-decoration: none;
+  border: 1px solid #1D9FCD;
+  background-color: #1D9FCD;
+  color: #fff;
+  padding: 1em 4.5em;
+  border-radius: 5px;
+  font-size: 1em !important;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.6s ease-in-out;
+}
+.header .buttons a:nth-child(1):hover {
+  color: #1D9FCD;
+  border: 1px solid #1D9FCD;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 1020px) {
+  .header .buttons a:nth-child(1):hover {
+    background-color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .buttons a:nth-child(1) {
+    padding: 0.8em 4em;
+    font-size: 0.9em !important;
+  }
+}
+.header .buttons a:nth-child(2) {
+  margin-left: 4em;
+  color: #fff;
+  margin-top: 3em;
+  text-decoration: none;
+  color: #1E1E1E;
+  padding: 1em 4.5em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 1em !important;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.6s ease-in-out;
+}
+.header .buttons a:nth-child(2):hover {
+  color: #1D9FCD;
+  border: 1px solid #1D9FCD;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (max-width: 1020px) {
+  .header .buttons a:nth-child(2):hover {
+    background-color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .buttons a:nth-child(2) {
+    padding: 0.8em 4em;
+    font-size: 0.9em !important;
+  }
+}
+
+.floating-div {
+  background-color: #1D9FCD;
+  padding: 3em;
+  width: 87%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  top: -4em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.floating-div .info {
+  display: flex;
+}
+.floating-div .info .icon {
+  padding-right: 1em;
+  line-height: 3em;
+}
+.floating-div .info .icon img {
+  width: 3em;
+}
+.floating-div .info .tag {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.courses-section {
+  padding: 3em 10em 5em;
+}
+@media screen and (max-width: 930px) {
+  .courses-section {
+    padding-bottom: 0 !important;
+  }
+}
+.courses-section h2 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #1D9FCD;
+}
+.courses-section .row-1 {
+  margin-bottom: 3em;
+  padding: 3em 3em 0;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 980px) {
+  .courses-section .row-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  .courses-section .row-1 {
+    padding: 3em 1em 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .courses-section .row-1 .sub-description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .courses-section .row-1 .sub-description {
+    text-align: justify;
+  }
+}
+.courses-section hr {
+  border-top: 2px solid #1D9FCD;
+  width: 35%;
+}
+@media screen and (max-width: 980px) {
+  .courses-section hr {
+    margin: 0 auto;
+  }
+}
+.courses-section .row-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 1em;
+}
+.courses-section .row-2 .card {
+  margin: 2em 1em;
+  width: 30em !important;
+  text-align: center;
+  border: 2px solid #1D9FCD;
+  border-radius: 10px;
+}
+.courses-section .row-2 .card h5 {
+  color: #1D9FCD;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+.courses-section .row-2 .card .btn {
+  margin-top: 1em;
+  background-color: #1D9FCD;
+  padding: 1em 4.5em;
+}
+
+.feature-intern {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: hwb(0 12% 88%);
+}
+.feature-intern .img-div {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+}
+.feature-intern .img-div img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=hiring.css.map */
