@@ -37,10 +37,18 @@ body {
         letter-spacing: 2px;
         color: color(primary);
         font-size: 3.2em;
+
+        @media screen and (max-width:800px){font-size: 2.5em;}
+        @media screen and (max-width:500px){font-size: 1.5em;}
+        @media screen and (max-width:450px){font-size: 1.2em;}
     }
 
     .description {
         padding: 1em 20em;
+
+        @media screen and (max-width:1500px){ padding: 1em 4em;}
+        @media screen and (max-width:800px){ padding: 1em 2em;}
+        @media screen and (max-width:500px){ font-size: 0.8em; padding: 1em 2em; text-align: justify;}
     }
 }
 
@@ -51,48 +59,115 @@ body {
 // cards
 
 .templates-section {
-    padding: 3em 2em 1em !important;
-    display: flex;
-    flex-wrap: wrap;
+  padding: 3em 0 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-    .row-2{margin-bottom: 3em;}
+    @media screen and (max-width:930px){ padding-bottom: 0 !important;}
 
 
-    .card {
-        margin: 0 2em 3em;
+  .row-2, .row-2-odd{
+      display: flex;
+      flex-wrap: wrap;
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2em;
-
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        color: #fff;
-      
-
-        .card-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-          }
-
-          img{
-            width: 230px;
-            margin: 0 2em 0;
-          }
-      }
-
-      .card-link {
-        font-size: 16px;
-        margin-right: 10px;
-        color: #fff;
-        text-decoration: none;
-      }
-
-      .card-link:last-child {
-        margin-right: 0;
-      }
-
+      @media screen and (max-width:1200px){ 
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
   }
+
+
+  .col {  margin-bottom: 2em; }
+
+  .card-2{ 
+      @media screen and (max-width:700px){ flex-direction: row !important; }
+      @media screen and (max-width:490px){ flex-direction: column !important;}        
+  }
+
+  .card, .card-2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0.5em 2em;
+      height: 100%;
+      margin: 0 2.5em 2em;
+      border-radius: 10px;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+
+      @media screen and (max-width:1290px){  margin: 0 1em 2em;}
+      @media screen and (max-width:1200px){  padding: 2em 5em; margin: 0 1em 2em;}
+      @media screen and (max-width:900px){  padding: 2em 1em; }
+      @media screen and (max-width:670px){flex-direction: row;}
+      @media screen and (max-width:490px){  
+          flex-direction: column-reverse;
+          text-align: center;
+      }
+
+
+      .mockup {
+          width: 50%;
+      
+          @media screen and (max-width:1180px){ width: 80%; }
+          @media screen and (max-width:1180px){ width: 65%; }
+          @media screen and (max-width:900px){ width: 55%; }
+          @media screen and (max-width:670px){ width: 100%;}
+      }
+
+
+      .odd{
+          width: 45%;
+
+          @media screen and (max-width:1200px){ 
+              display: block;
+              float: right
+          }
+
+          @media screen and (max-width:670px){ width: 100%;}
+      }
+    
+
+      .card-title {
+          font-size: 20px;
+          margin-bottom: 10px;
+
+          @media screen and (max-width:700px){font-size: 1.5em; } 
+      }
+
+        img{
+          width: 240px;
+          
+         @media screen and (max-width:1200px){ width: 300px; } 
+         @media screen and (max-width:700px){ width: 200px; }
+         @media screen and (max-width:350px){ width: 180px; }  
+      }
+
+      .buttons{
+          margin-top: 3em;
+          line-height: 2em;
+
+          @media screen and (max-width:350px){margin-top: 1em; } 
+      }
+    }
+
+
+    .card-link, .card-text{
+      font-size: 16px;
+      margin-right: 10px;
+      color: #fff;
+      text-decoration: none;
+      
+      @media screen and (max-width:700px){font-size: 0.8em; } 
+    }
+}
+}
+
+@media (max-width: 1179px) {
+  .row-1 .col-lg-6 {
+    width: 100%;
+  }
+}
