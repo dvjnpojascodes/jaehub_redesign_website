@@ -271,6 +271,7 @@ body {
 
 .portfolio-section {
   padding: 3em 10em 5em;
+  overflow-x: hidden;
   background-color: #EFF5F5;
 }
 @media screen and (max-width: 930px) {
@@ -336,6 +337,14 @@ body {
 }
 .portfolio-section .col {
   margin-bottom: 2em;
+  transform: translateX(-200%);
+  transition: transform 1s ease-in;
+}
+.portfolio-section .col:nth-of-type(even) {
+  transform: translateX(200%);
+}
+.portfolio-section .col.show {
+  transform: translateX(0);
 }
 @media screen and (max-width: 700px) {
   .portfolio-section .card-2 {
@@ -578,6 +587,17 @@ body {
   .wave {
     margin-top: -23px;
   }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transition: all 1.2s;
+  transform: translate(0, 100px);
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .slanted {

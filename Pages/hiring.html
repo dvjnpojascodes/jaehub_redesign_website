@@ -32,43 +32,48 @@
 
 <body>
 
-    <div class="contact-info">
-        <div class="left-column">
-            <p> <i class="fa-solid fa-location-dot"></i> &nbsp; Unit 1015 Winland Tower Residence 4 Tomas Morato Quezon, City</p>
-            &emsp;&emsp; <p> <i class="fa-solid fa-phone"></i> &nbsp; Contact: 09561509151</p>
-            &emsp;&emsp; <p> <i class="fa-solid fa-envelope"></i>  &nbsp; Email: admin@jaehubservices.com</p>
-        </div>
-        <div class="right-column">
-            <a href="https://www.youtube.com/channel/UCb7K2p-n72icDfFMaGAdjqg" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
-            <a href="https://www.facebook.com/biz.jaehub" target="_blank"> <i class="fa-brands fa-square-facebook"></i> </a>
-        </div>
+  <div class="contact-info">
+    <div class="left-column">
+        <p> <i class="fa-solid fa-location-dot"></i> &nbsp;Unit 1015 Winland Tower Residence 4 Tomas Morato Quezon, City</p>
+        &emsp; <p> <i class="fa-solid fa-phone"></i> &nbsp;09561509151</p>
+        &emsp; <p> <i class="fa-solid fa-envelope"></i>  &nbsp;admin@jaehubservices.com</p>
     </div>
+    <div class="right-column">
+        <a href="https://www.youtube.com/channel/UCb7K2p-n72icDfFMaGAdjqg" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
+        <a href="https://www.facebook.com/biz.jaehub" target="_blank"> <i class="fa-brands fa-square-facebook"></i> </a>
+    </div>
+</div>
 
 
-    <!-- ======= START OF NAVIGATION BAR ======= -->
-    <nav class="navbar">
-      <a href="#" class="logo"><img src="/assets/logo.png" id="logo" alt=""></a>
-    
-      <input type="checkbox" id="menu-btn" class="menu-btn">
-      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
-      
-      <ul class="nav-links">
-        <li class="nav-link"><a href="/index.html">Home</a></li>
-        <li class="nav-link dropdown">
-          <button class="dropbtn">Portfolio</button>
-          <ul class="dropdown-content">
-            <li><a href="/index.html#Portfolio">Portfolio</a></li>
-            <li><a href="/Pages/templates.html">Templates</a></li>
-            <li><a href="/index.html#pricing">Pricing</a></li>
-          </ul>
-        </li>
-        <li class="nav-link"><a href="/index.html#services">Services</a></li>
-        <li class="nav-link"><a href="/index.html#about">About Us</a></li>
-        <li class="nav-link"><a href="">E-Commerce</a></li>
-        <li class="nav-link"><a href="">Hiring</a></li>
-        <li class="nav-link"><a href="/index.html#contact-form">Contact Us</a></li>
-      </ul>
+<!-- ======= START OF NAVIGATION BAR ======= -->
+<div class="navigation">
+  <section class="navigation" id="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="/index.html" class="logo"><img src="/assets/logo.png" id="logo" alt=""></a>
+      </div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list" >
+          <li id="nav-link"> <a href="/index.html">HOME</a> </li>
+          <li id="nav-link">
+            <a href="#!">PORTFOLIO</a>
+            <ul class="nav-dropdown">
+              <li> <a href="#Portfolio">PORTFOLIO</a> </li>
+              <li> <a href="/Pages/templates.html">TEMPLATES</a> </li>
+              <li> <a href="#pricing">PRICING</a> </li>
+            </ul>
+          </li>
+          <li id="nav-link"> <a href="#services">SERVICES</a> </li>
+          <li id="nav-link"> <a href="#about">ABOUT US</a> </li>
+          <li id="nav-link"> <a href="#!">E-COMMERCE</a> </li>
+          <li id="nav-link"> <a href="/Pages/hiring.html">HIRING</a> </li>
+          <li id="nav-link"> <a href="#contact-form">CONTACT US</a> </li>
+        </ul>
       </nav>
+    </div>
+  </section>
+</div>
 
 
 
@@ -82,13 +87,13 @@
             </p>
 
             <div class="buttons">
-                <a href="">Get Started</a>
-                <a href=""> <i class="fa-solid fa-play"></i> &nbsp; Watch Video </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs">Get Started</a>
+                <a href="https://youtu.be/OSrh78S79O8" target="_blank"> <i class="fa-solid fa-play"></i> &nbsp; Watch Video </a>
             </div>
         </div>
         <div class="right">
-
-            <img src="/Assets/Girl-Working.png" alt="">
+            <img src="/Assets/Girl-Working.png" class="stud-image" alt="">
+            <div class="overlay"></div>
         </div>
     </div>
 
@@ -117,7 +122,7 @@
     </div>
 
 
-    <div class="courses-section container-fluid" id="Portfolio">
+    <div class="courses-section container-fluid">
         <div class="row row-1">
             <div class="col-lg-6 col-md-12">
                 <h2>OUR INTERNSHIP PROGRAMS</h2>
@@ -129,79 +134,423 @@
 
         <div class="row row-2">
 
-            <div class="card" style="width: 18rem;">
+            <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">BUSINESS ADMINISTRATION</h5>
                   <p class="card-text">This internship program offers a valuable opportunity for students interested in gaining hands-on experience in the business world, where it will help you develop essential skills in communication, organization, problem-solving, and teamwork, while also providing valuable insights into the operations of a successful business. </p> <br>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bsad">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title"> COMPUTER SCIENCE AND INFORMATION TECHNOLOGY </h5>
                   <p class="card-text">This internship program provides a unique opportunity for students interested in pursuing a career in technology, where you will have the chance to develop your technical skills, learn from industry experts, and contribute to meaningful projects that impact our organization and customers.</p>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#csit">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">COMPUTER ENGINEERING</h5>
                   <p class="card-text">This internship program provides a unique opportunity for those interested in the constantly evolving field of computer engineering. You will work on a variety of projects to gain hands-on experience with cutting-edge technologies and tools used in the industry, such as programming languages, integrated development environments, and simulation software. </p>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comeng">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">ENTREPRENEURSHIP</h5>
                   <p class="card-text">This internship program provides students with a unique and valuable perspective on what it takes to launch and run a successful business through various tasks such as market research, product development, financial planning, and marketing strategies. </p> <br>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#entrep">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">FINANCIAL MANAGEMENT</h5>
                   <p class="card-text">This internship program offers a valuable opportunity for students interested in gaining practical experience in the field of finance by working alongside professionals on variety of projects and  gain hands-on experience with financial software and tools commonly used in the industry.</p>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#finance">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title"> GRAPHIC DESIGNER </h5>
                   <p class="card-text">This internship program provides a unique opportunity for students interested in developing their skills in visual communication and design by working alongside experienced graphic designers on a variety of projects, including branding, advertising, web design, and multimedia production.</p>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#graphic">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">HUMAN RESOURCES</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.This internship program provides a unique opportunity for individuals interested in gaining practical experience in the field of HR, by working alongside experienced HR professionals on a variety of projects, and gain hands-on experience with HR software and tools commonly used in the industry, as well as learn about HR policies, procedures, and compliance. </p>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#humanresource">
+                    See Job Description
+                  </button>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">SALES AND MARKETING</h5>
                   <p class="card-text">This internship program provides a unique opportunity for individuals interested in gaining practical experience in the fast-paced and dynamic world of sales and marketing. You will work closely with experienced sales and marketing professionals on a variety of projects, and gain hands-on experience with sales and marketing software and tools commonly used in the industry.</p>  <br>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sales">
+                    See Job Description
+                  </button>
                 </div>
               </div>  
               
-              <div class="card" style="width: 18rem;">
+              <div class="card fade-in-up" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title"> K-12 </h5>
                   <p class="card-text">The K-12 internship offers a valuable opportunity to gain hands-on experience in the industry by assisting on various tasks and projects in the company. Interns will  have the chance to learn about the industry and the organization through observation, training sessions, and mentorship programs, and build relationships with colleagues and industry professionals.</p>  <br>
-                  <a href="#" class="btn btn-primary">See Job Description</a>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#k12">
+                    See Job Description
+                  </button>
                 </div>
               </div>  
 
         </div>
+
+
+
+        <!-- THESE ARE THE POP-UP MODALS -->
+
+        <!-- For Business Ad -->
+        <div class="modal fade" id="bsad" tabindex="-1" aria-labelledby="bsad" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">BUSINESS ADMINISTRATION</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="left-row">
+                      <ul>
+                        <li>Data entry and management: Maintaining databases, updating records, and compiling reports.</li>
+                        <li>Administrative support: Assisting with scheduling, filing, and other administrative tasks as needed.</li>
+                        <li>Project assistance: Providing support for ongoing projects, including research, data collection and analysis, and report preparation.</li>
+                        <li>Customer service: Answering phone calls, responding to emails, and assisting customers with their needs.</li>
+                        <li>Shadowing and learning: Observing and learning from experienced professionals, participating in meetings and training sessions.</li>
+                      </ul>
+                    </div>
+
+                    <div class="right-row">
+                      <iframe src="https://www.youtube.com/embed/ETYdhn9L2lE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <div class="modal-footer">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                      <button type="button" class="btn mx-auto">SEND AN APPLICATION</button>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- For ComSci and IT -->
+        <div class="modal fade" id="csit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> COMPUTER SCIENCE AND INFORMATION TECHNOLOGY </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Assisting with software development and maintenance projects. </li>
+                      <li> Writing, testing, and debugging code. </li>
+                      <li> Collaborating with team members to understand project requirements and provide solutions. </li>
+                      <li> Participating in code reviews and software design meetings. </li>
+                      <li> Learning about new technologies and tools used in the workplace. </li>
+                      <li> Documenting code and project processes. </li>
+                      <li> Troubleshooting technical issues and providing technical support. </li>
+                      <li> Attending meetings, presentations, and training sessions to expand knowledge and understanding of the industry. </li>
+                      <li> Completing assigned tasks and projects within deadlines.</li>
+                      <li> Following established coding standards and software development methodologies. </li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/LN4sqb4WxJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- For ComEng -->
+        <div class="modal fade" id="comeng" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> COMPUTER ENGINEERING </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Working with a team of software developers to design and implement software systems </li>
+                      <li> Assisting with testing and debugging code. </li>
+                      <li> Participating in code reviews</li>
+                      <li> Learning new programming languages and technologies. </li>
+                      <li> Developing technical skills and knowledge through on-the-job training and mentorship. </li>
+                      <li> Assisting with software maintenance and support tasks </li>
+                      <li> Collaborating with other team members to solve problems and improve processes. </li>
+                      <li> Participating in project meetings and presentations to report on progress and receive feedback. </li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/Nl5ONEqjZ-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <!-- For Entrep -->
+        <div class="modal fade" id="entrep" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ENTREPRENEURSHIP </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Market research: Conducting market research, analyzing data and trends, and preparing reports on market conditions. </li>
+                      <li> Business planning: Assisting with the preparation of business plans, including market analysis, financial projections, and operational strategies. </li>
+                      <li> Customer outreach: Assisting with the development of customer relationships, including outreach, communication, and follow-up. </li>
+                      <li> Sales and marketing: Assisting with sales and marketing efforts, including the preparation of presentations, proposals, and other marketing materials. </li>
+                      <li> Operations management: Assisting with the day-to-day operations of the business, including the management of resources, personnel, and processes. </li>
+                      <li> Shadowing and learning: Observing and learning from experienced entrepreneurs and business professionals, participating in meetings and training sessions.</li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/lDe1iPfTHXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+
+        
+        <!-- For Financial Management -->
+        <div class="modal fade" id="finance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">FINANCIAL MANAGEMENT </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Budget analysis: Assisting with the preparation and analysis of budgets, and monitoring spending. </li>
+                      <li> Financial reporting: Compiling and analyzing financial data, preparing reports and presentations for senior management. </li>
+                      <li> Accounts payable/receivable: Assisting with the processing of invoices, receipts, and other financial transactions.</li>
+                      <li> Investment analysis: Assisting with the analysis of investment opportunities, and the preparation of investment reports. </li>
+                      <li> Risk management: Assisting with the identification and assessment of financial risks, and the development of strategies to mitigate those risks. </li>
+                      <li> Shadowing and learning: Observing and learning from experienced financial professionals, participating in meetings and training sessions. </li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/cmWVPHjwyP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>    
+
+        <!-- For Graphic Designer -->
+        <div class="modal fade" id="graphic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">GRAPHIC DESIGNER </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Design support: Assisting with the design of graphics and layouts, including the creation of rough sketches and prototypes. </li>
+                      <li> Image editing: Retouching and manipulating images, and preparing graphics for print or digital use. </li>
+                      <li> Content creation: Creating original graphics, illustrations, and animations for use in marketing materials. </li>
+                      <li> Technical support: Assisting with the preparation and output of designs for print or digital media, ensuring that designs meet technical requirements. </li>
+                      <li> Project management: Assisting with the management of projects, including scheduling and coordinating with other team members. </li>
+                      <li> Shadowing and learning: Observing and learning from experienced graphic designers, participating in meetings and training sessions. </li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/1usGuwI_l1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>    
+
+        <!-- For Graphic Designer -->
+        <div class="modal fade" id="humanresource" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> HUMAN RESOURCES </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Recruitment support: Assisting with posting job ads, screening resumes, scheduling interviews, and conducting reference checks. </li>
+                      <li> Onboarding: Assisting with the orientation and integration of new hires into the organization. </li>
+                      <li> Employee relations: Assisting with employee relations issues, such as complaints or disputes. </li>
+                      <li> Benefits administration: Assisting with the administration of employee benefits programs, such as health insurance or retirement plans. </li>
+                      <li> Data management: Maintaining personnel files, updating HR databases, and compiling reports. </li>
+                      <li> Shadowing and learning: Observing and learning from experienced HR professionals, participating in meetings and training sessions.</li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/1usGuwI_l1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <!-- For Sales and Marketing -->
+        <div class="modal fade" id="sales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> SALES AND MARKETING </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li>Assisting with market research and analysis. </li>
+                      <li> Helping to develop marketing and sales strategies. </li>
+                      <li> Assisting with the creation of marketing materials such as flyers, brochures, and presentations. </li>
+                      <li> Conducting customer outreach and follow-up. </li>
+                      <li> Monitoring competitor activity and market trends. </li>
+                      <li> Participating in product launches and promotional events. </li>
+                      <li> Helping to maintain and update the company's customer relationship management (CRM) system. </li>
+                      <li> Providing support for the sales team and helping with administrative tasks. </li>
+                      <li> Gathering and organizing customer data and feedback. </li>
+                      <li> Learning about sales and marketing techniques, as well as the industry and company. </li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row">
+                    <iframe src="https://www.youtube.com/embed/YCYpb29MS34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <!-- For K12 -->
+        <div class="modal fade" id="k12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> K-12 </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="left-row">
+                    <ul>
+                      <li> Assisting with daily operations: Supporting staff with various tasks and projects, such as data entry, research, and document preparation. </li>
+                      <li> Learning about the industry: Observing and learning about the industry and the organization, including company culture, processes, and procedures. </li>
+                      <li> Participating in training and development: Participating in training sessions and workshops to develop skills and knowledge relevant to the industry. </li>
+                      <li> Shadowing and learning from mentors: Observing and learning from experienced professionals, and participating in mentorship programs. </li>
+                      <li> Networking: Building relationships with colleagues and industry professionals, and expanding knowledge of the industry. </li>
+                      <li> Completing projects: Working on assigned projects and presenting findings or recommendations to the organization. </li>
+                    </ul>
+                  </div>
+
+                  <div class="right-row-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T1YS1b_ur4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8TkKG7XgOuBaEBX9i-YHNrFOBxwjI2wcQ04gV2zrOZBzmRA/viewform?fbclid=IwAR2lAn_xcQfZ8x7SvArLUorVfYMJ9gkuY7HPWUu6qJ_aW5FYApQWU-5hZxs" target="_blank">
+                  <button type="button" class="btn">SEND AN APPLICATION</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>   
+
     </div>
 
     <div class="feature-intern">
@@ -259,4 +608,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/navbar.js"></script>
+    <script src="/JS/animation.js"></script>
+    <script src="/JS/hiring.js"></script>
 </body>
+</html>

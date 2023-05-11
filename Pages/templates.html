@@ -34,9 +34,9 @@
 
     <div class="contact-info">
         <div class="left-column">
-            <p> <i class="fa-solid fa-location-dot"></i> &nbsp; Unit 1015 Winland Tower Residence 4 Tomas Morato Quezon, City</p>
-            &emsp;&emsp; <p> <i class="fa-solid fa-phone"></i> &nbsp; Contact: 09561509151</p>
-            &emsp;&emsp; <p> <i class="fa-solid fa-envelope"></i>  &nbsp; Email: admin@jaehubservices.com</p>
+            <p> <i class="fa-solid fa-location-dot"></i> &nbsp;Unit 1015 Winland Tower Residence 4 Tomas Morato Quezon, City</p>
+            &emsp; <p> <i class="fa-solid fa-phone"></i> &nbsp;09561509151</p>
+            &emsp; <p> <i class="fa-solid fa-envelope"></i>  &nbsp;admin@jaehubservices.com</p>
         </div>
         <div class="right-column">
             <a href="https://www.youtube.com/channel/UCb7K2p-n72icDfFMaGAdjqg" target="_blank"> <i class="fa-brands fa-youtube"></i> </a>
@@ -46,29 +46,34 @@
 
 
     <!-- ======= START OF NAVIGATION BAR ======= -->
-    <nav class="navbar">
-      <a href="#" class="logo"><img src="/assets/logo.png" id="logo" alt=""></a>
-    
-      <input type="checkbox" id="menu-btn" class="menu-btn">
-      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
-      
-      <ul class="nav-links">
-        <li class="nav-link"><a href="/index.html">Home</a></li>
-        <li class="nav-link dropdown">
-          <button class="dropbtn">Portfolio</button>
-          <ul class="dropdown-content">
-            <li><a href="/index.html#Portfolio">Portfolio</a></li>
-            <li><a href="/Pages/templates.html">Templates</a></li>
-            <li><a href="/index.html#pricing">Pricing</a></li>
-          </ul>
-        </li>
-        <li class="nav-link"><a href="/index.html#services">Services</a></li>
-        <li class="nav-link"><a href="/index.html#about">About Us</a></li>
-        <li class="nav-link"><a href="">E-Commerce</a></li>
-        <li class="nav-link"><a href="">Hiring</a></li>
-        <li class="nav-link"><a href="/index.html#contact-form">Contact Us</a></li>
-      </ul>
-      </nav>
+    <div class="navigation">
+      <section class="navigation"id="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="/index.html" class="logo"><img src="/assets/logo.png" id="logo" alt=""></a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li id="nav-link"> <a href="/index.html">HOME</a> </li>
+              <li id="nav-link">
+                <a href="#!">PORTFOLIO</a>
+                <ul class="nav-dropdown">
+                  <li> <a href="/index.html#Portfolio">PORTFOLIO</a> </li>
+                  <li> <a href="/Pages/templates.html">TEMPLATES</a> </li>
+                  <li> <a href="/index.html#pricing">PRICING</a> </li>
+                </ul>
+              </li>
+              <li id="nav-link"> <a href="/index.html#services">SERVICES</a> </li>
+              <li id="nav-link"> <a href="/index.html#about">ABOUT US</a> </li>
+              <li id="nav-link"> <a href="#!">E-COMMERCE</a> </li>
+              <li id="nav-link"> <a href="/Pages/hiring.html">HIRING</a> </li>
+              <li id="nav-link"> <a href="/index.html#contact-form">CONTACT US</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
 
 
 
@@ -97,7 +102,7 @@
         <div class="row row-2">
 
             <!-- card 1 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card" style="background-color:#026C8A ;background-image: url('/Assets/Templates\ BG/Template-BG.png');">
                     <div class="card-body">
                           <h5 class="card-title"> Template Genius</h5>
@@ -116,7 +121,7 @@
             </div>
 
             <!-- card 2 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color:#515159 ;background-image: url('/Assets/Templates\ BG/Template-BG-2.png');">
                   <div class="mockup">
                       <img src="/Assets/Mockups/Site Starter.png" class="card-img-top" alt="...">
@@ -140,7 +145,7 @@
         <div class="row row-2">
 
             <!-- card 3 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#3A4454 ;background-image: url('/Assets/Templates\ BG/Template-BG-3.png');">
                     <div class="card-body">
                         <h5 class="card-title"> Designing For Success</h5>
@@ -160,7 +165,7 @@
             </div>
 
             <!-- card 4 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color:#D0EBF3 ;background-image: url('/Assets/Templates\ BG/Template-BG-4.png'); color: #1E1E1E;">
                   <div class="mockup">
                       <img src="/Assets/Mockups/Web Blocks.png" class="card-img-top" alt="...">
@@ -183,7 +188,7 @@
          <!-- ROW 3 OF CARDS -->
         <div class="row row-2">
             <!-- card 5 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color:#F8C00B ;background-image: url('/Assets/Templates\ BG/Template-BG-2_v2.png');">
 
                 <div class="mockup">
@@ -204,7 +209,7 @@
             
             
             <!-- card 6 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#7E412F ;background-image: url('/Assets/Templates\ BG/Template-BG-5.png');">
 
                     <div class="card-body">
@@ -228,7 +233,7 @@
         <!-- ROW 4 OF CARDS -->
         <div class="row row-2">
             <!-- card 7 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#202020 ;background-image: url('/Assets/Templates\ BG/Template-BG-6.png');">
                     <div class="card-body">
                         <h5 class="card-title"> Designing For Success</h5>
@@ -247,7 +252,7 @@
             </div>
 
             <!-- card 8 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color: #F6BF9F; background-image: url('/Assets/Templates\ BG/Template-BG_v2.png');">
 
                     <div class="mockup">
@@ -271,7 +276,7 @@
         <div class="row row-2">
 
             <!-- card 9 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color:#201D2A ;background-image: url('/Assets/Templates\ BG/Template-BG-4_v2.png');">
 
                 <div class="mockup">
@@ -292,7 +297,7 @@
             
             
             <!-- card 10 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#515159 ;background-image: url('/Assets/Templates\ BG/Template-BG-2.png');">
 
                     <div class="card-body">
@@ -316,7 +321,7 @@
         <div class="row row-2">
 
             <!-- card 11 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color:#274D5A ;background-image: url('/Assets/Templates\ BG/Template-BG-3_v2.png');">
 
                 <div class="mockup">
@@ -337,7 +342,7 @@
             
             
             <!-- card 12 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#202020 ;background-image: url('/Assets/Templates\ BG/Template-BG-6.png');">
 
                     <div class="card-body">
@@ -361,7 +366,7 @@
         <div class="row row-2">
 
             <!-- card 13 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#0F3273 ;background-image: url('/Assets/Templates\ BG/Template-BG-5_v2.png');">
                     <div class="card-body">
                         <h5 class="card-title"> Staycation</h5>
@@ -380,7 +385,7 @@
             </div>
 
             <!-- card 14 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color: #5C9F24; background-image: url('/Assets/Templates\ BG/Template-BG_v3.png');">
 
                 <div class="mockup">
@@ -405,7 +410,7 @@
         <div class="row row-2">
 
             <!-- card 15 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color:#4381B1 ;background-image: url('/Assets/Templates\ BG/Template-BG-2_v4.png');">
 
                 <div class="mockup">
@@ -426,7 +431,7 @@
             
             
             <!-- card 16 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#4D628B ;background-image: url('/Assets/Templates\ BG/Template-BG-3_v3.png');">
 
                     <div class="card-body">
@@ -452,7 +457,7 @@
         <div class="row row-2">
 
             <!-- card 17 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#202020 ;background-image: url('/Assets/Templates\ BG/Template-BG-6.png');">
                     <div class="card-body">
                         <h5 class="card-title"> Powerful Digital </h5>
@@ -471,7 +476,7 @@
             </div>
 
             <!-- card 18 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color: #5C6F89; background-image: url('/Assets/Templates\ BG/Template-BG-4-v3.png');">
 
                 <div class="mockup">
@@ -492,10 +497,10 @@
         </div>
 
         <!-- ROW 10 OF CARDS -->
-        <div class="row row-2">
+        <div class="row row-2 ">
 
             <!-- card 19 -->
-            <div class="col odd-card">
+            <div class="col odd-card card_template">
                 <div class="card" style="background-color:#D6C0A9 ;background-image: url('/Assets/Templates\ BG/Template-BG_v4.png');">
                     <div class="card-body">
                         <h5 class="card-title"> Project Making Website</h5>
@@ -514,7 +519,7 @@
             </div>
 
             <!-- card 20 -->
-            <div class="col">
+            <div class="col card_template">
                 <div class="card-2" style="background-color: #494B4A; background-image: url('/Assets/Templates\ BG/Template-BG-5_v2.png');">
 
                 <div class="mockup">
@@ -538,7 +543,7 @@
 
         <div class="row row-2-odd">
             <!-- card 16 -->
-            <div class="col-xl-6 col-lg-12 odd-card">
+            <div class="col-xl-6 col-lg-12 odd-card card_template">
                 <div class="card" style="background-color:#7FAD39 ;background-image: url('/Assets/Templates\ BG/Template-BG_v5.png');">
                     <div class="card-body">
                         <h5 class="card-title"> Site Masters</h5>
@@ -599,10 +604,19 @@
           </div>
         </div>
       </footer>
-      
 
     <!-- ===================================================
                 END OF FOOTER
     ------------------------------------------------------->
+
+    
+    <!--JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/navbar.js"></script>
+    <script src="/JS/animation.js"></script>
 </body>
 </html>

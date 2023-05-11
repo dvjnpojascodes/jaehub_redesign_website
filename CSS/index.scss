@@ -226,6 +226,7 @@ body {
 
   .portfolio-section {
     padding: 3em 10em 5em;
+    overflow-x: hidden;
     @media screen and (max-width:930px){ padding-bottom: 0 !important;}
 
 
@@ -280,7 +281,18 @@ body {
 
     .col {
         margin-bottom: 2em;
+        transform: translateX(-200%);
+        transition: transform 1s ease-in;
+
+        &:nth-of-type(even) {
+            transform: translateX(200%);
+        }
     }
+
+    .col.show {
+        transform: translateX(0);
+    }
+
 
     .card-2{ 
         @media screen and (max-width:700px){ flex-direction: row !important; }
@@ -370,6 +382,7 @@ body {
 
 
 
+
 //================== SERVICES SECTION ====================
   .services-container{
 
@@ -418,6 +431,7 @@ body {
     }
 
 
+
     .card {
         margin-bottom: 60px;
         padding: 1em;
@@ -453,6 +467,17 @@ body {
     @media (max-width: 767px) {
         margin-top: -23px;
     }
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transition: all 1.2s;
+    transform: translate(0, 100px);
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 
 //=====================  ABOUT SECTION ====================
@@ -803,17 +828,3 @@ body {
 
 
 
-
-
-
-// MEDIA QUERIES
-
-@media screen and (max-width:1020px){ 
-    
-}
-
-@media screen and (max-width:900px){ 
-
-
-
- }

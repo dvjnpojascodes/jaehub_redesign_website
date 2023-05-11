@@ -82,6 +82,9 @@ body {
 .templates-section .row-2 .col, .templates-section .row-2-odd .col {
   margin-bottom: 2em;
 }
+.templates-section .row-2 .col.show, .templates-section .row-2-odd .col.show {
+  transform: translateX(0);
+}
 @media screen and (max-width: 700px) {
   .templates-section .row-2 .card-2, .templates-section .row-2-odd .card-2 {
     flex-direction: row !important;
@@ -91,6 +94,16 @@ body {
   .templates-section .row-2 .card-2, .templates-section .row-2-odd .card-2 {
     flex-direction: column !important;
   }
+}
+.templates-section .row-2 .card_template, .templates-section .row-2-odd .card_template {
+  transform: translateX(-200%);
+  transition: transform 1s ease-in;
+}
+.templates-section .row-2 .card_template:nth-of-type(even), .templates-section .row-2-odd .card_template:nth-of-type(even) {
+  transform: translateX(200%);
+}
+.templates-section .row-2 .card_template.show, .templates-section .row-2-odd .card_template.show {
+  transform: translateX(0);
 }
 .templates-section .row-2 .card, .templates-section .row-2 .card-2, .templates-section .row-2-odd .card, .templates-section .row-2-odd .card-2 {
   display: flex;
