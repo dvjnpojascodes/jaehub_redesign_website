@@ -1,0 +1,40 @@
+$colors: ( primary: #1D9FCD,);
+@function color($colorname){
+    @return map-get($colors, $colorname)
+  }
+
+
+$title-font: 'Lexend', sans-serif;;
+
+*, *::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+body { overflow-x: hidden;}
+
+.error {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+
+    img {
+        width: 40%;
+    }
+
+    h1 {
+        text-align: center;
+        color: color(primary);
+        font-family: $title-font;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding-top: 2em;
+        @media screen and (max-width:700px){font-size: 1.4em !important; }
+        @media screen and (max-width:350px){font-size: 1em !important; }
+    }
+}

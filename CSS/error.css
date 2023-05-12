@@ -1,0 +1,39 @@
+*, *::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.error {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+.error img {
+  width: 40%;
+}
+.error h1 {
+  text-align: center;
+  color: #1D9FCD;
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-top: 2em;
+}
+@media screen and (max-width: 700px) {
+  .error h1 {
+    font-size: 1.4em !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .error h1 {
+    font-size: 1em !important;
+  }
+}/*# sourceMappingURL=error.css.map */
